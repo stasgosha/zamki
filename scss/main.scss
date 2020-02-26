@@ -1,0 +1,42 @@
+@import "components/fonts";
+@import "components/vars";
+@import "components/assist";
+@import "components/layout";
+@import "components/typography";
+@import "icons";
+
+// Header
+@import "components/header/header";
+
+// Footer
+@import "components/footer/footer";
+
+// Common
+@import "components/common/buttons";
+@import "components/common/forms";
+@import "components/common/sliders";
+@import "components/common/menu-opener";
+@import "components/common/news-card";
+@import "components/common/tabs-nav";
+@import "components/common/modals";
+
+// Sections
+@import "components/sections/first-screen-section";
+@import "components/sections/well-being-section";
+@import "components/sections/features-section";
+@import "components/sections/schema-section";
+@import "components/sections/advantages-section";
+@import "components/sections/townhouses-section";
+@import "components/sections/gallery-section";
+@import "components/sections/order-section";
+@import "components/sections/news-section";
+@import "components/sections/contacts-section";
+@import "components/sections/about-section";
+@import "components/sections/about-features-section";
+@import "components/sections/achievements-section";
+@import "components/sections/awards-section";
+@import "components/sections/events-section";
+@import "components/sections/feedback-section";
+@import "components/sections/page-404-section";
+@import "components/sections/townhouse-big-slider-section";
+@import "components/sections/about-townhouse-section";

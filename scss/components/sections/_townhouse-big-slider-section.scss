@@ -1,0 +1,141 @@
+.townhouse-big-slider-section{
+	padding-bottom: 100px;
+
+	@media screen and (max-width: 767px){
+		padding-bottom: 60px;
+	}
+
+	.big-slider{
+		width: 100%;
+		max-width: 1920px;
+		margin: 0 auto;
+
+		.slide{
+			padding: 0;
+		}
+
+		.slide-image{
+			position: relative;
+
+			&:before{
+				content: '';
+				display: block;
+				padding-top: 40.4167%;
+			}
+
+			img{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				object-fit: cover;
+				object-position: center center;
+				font-family: 'object-fit: cover; object-position: center center;';
+			}
+		}
+	}
+
+	.big-slider-previews{
+		margin-top: -100px;
+		width: calc(100% + 15px * 2);
+		margin-left: -15px;
+		margin-right: -15px;
+		display: flex;
+		position: relative;
+		z-index: 2;
+
+		.item{
+			padding: 0 15px;
+			width: 33.333%;
+		}
+
+		.item-photo{
+			border: 10px solid $body-bg;
+			transition: all $t;
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+			display: block;
+			width: 100%;
+			border-radius: 0;
+			appearance: none;
+			box-shadow: 0;
+
+			&:before{
+				content: '';
+				display: block;
+				padding-top: 52.94%;
+			}
+
+			img{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				object-fit: cover;
+				object-position: center center;
+				font-family: 'object-fit: cover; object-position: center center;';
+				display: block;
+				transition: all .5s;
+			}
+
+			&:hover,
+			&:focus{
+				outline: none;
+				transform: translateY(-10px);
+			}
+
+			&.current{
+				// transform: translateY(-20px);
+				cursor: default;
+			}
+		}
+
+		@media screen and (max-width: 991px){
+			margin-top: -50px;
+			width: calc(100% + 10px * 2);
+			margin-left: -10px;
+			margin-right: -10px;
+			
+			.item{
+				padding: 0 10px;
+			}
+
+			.item-photo{
+				border-width: 7px;
+			}
+		}
+
+		@media screen and (max-width: 767px){
+			margin-top: -40px;
+			width: calc(100% + 5px * 2);
+			margin-left: -5px;
+			margin-right: -5px;
+			
+			.item{
+				padding: 0 5px;
+			}
+
+			.item-photo{
+				border-width: 5px;
+			}
+		}
+
+		@media screen and (max-width: 575px){
+			margin-top: -25px;
+			width: calc(100% + 3px * 2);
+			margin-left: -3px;
+			margin-right: -3px;
+
+			.item{
+				padding: 0 3px;
+			}
+
+			.item-photo{
+				border-width: 2px;
+			}
+		}
+	}
+}

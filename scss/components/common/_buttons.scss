@@ -1,0 +1,71 @@
+.btn{
+	border: 0;
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: -0.03em;
+	padding: 8px 20px;
+	min-height: 36px;
+	background: $accent;
+	font-family: $main-font;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: all $t;
+	cursor: pointer;
+	// min-width: 175px;
+
+	&.btn-big{
+		font-size: 18px;
+		min-height: 44px;
+		font-weight: bold;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	&.btn-large{
+		font-size: 18px;
+		min-height: 80px;
+		font-weight: bold;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	&.btn-small{
+		font-size: 18px;
+		min-height: 40px;
+		font-weight: bold;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.btn-icon{
+		display: block;
+		width: 20px;
+		height: 20px;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		&:first-child{
+			margin-right: 10px;
+		}
+	}
+
+	&:hover{
+		background: lighten($accent, 10%);
+	}
+
+	&:focus{
+		outline: none;
+	}
+
+	&.btn-fullwidth{
+		width: 100%;
+	}
+}

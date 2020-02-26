@@ -1,0 +1,142 @@
+.form-field{
+	position: relative;
+
+	&:not(.no-before):before{
+		content: '';
+		display: block;
+		width: 1px;
+		height: 12px;
+		background: $light;
+		opacity: .5;
+		transition: opacity $t;
+		position: absolute;
+		left: -1px;
+		bottom: 0;
+	}
+
+	&:focus-within{
+		&:before{
+			opacity: 1;
+		}
+	}
+
+	.form-label{
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 0;
+		color: $text-color;
+		opacity: .5;
+	}
+
+	.input-field,
+	textarea{
+		border: 0;
+		height: 30px;
+		width: 100%;
+		font-size: 18px;
+		color: $text-light;
+		font-family: $main-font;
+		font-weight: 400;
+		padding: 0 7px;
+		outline: none !important;
+		transition: all $t;
+		appearance: none;
+		background: transparent;
+		border-bottom: 1px solid rgba($light, .5);
+		border-radius: 0;
+
+		&::placeholder{
+			color: rgba($text-light, .5);
+			transition: all $t;
+		}
+
+		&:focus{
+			border-color: $light;
+		}
+	}
+
+	textarea{
+		resize: none;
+		padding: 10px 15px;
+		height: 157px;
+		border: 1px solid $light;
+		display: block;
+	}
+
+	&.dark{
+		&:before{
+			background: $text-color;
+		}
+
+		.input-field,
+		textarea{
+			color: $text-color;
+			border-bottom: 1px solid rgba($text-color, .5);
+
+			&::placeholder{
+				color: rgba($text-color, .5);
+			}
+
+			&:focus{
+				border-color: $text-color;
+			}
+		}
+
+		textarea{
+			border-color: rgba($text-color, .5);
+
+			&:focus{
+				border-color: $text-color;
+			}
+		}
+	}
+}
+
+.form{
+	.form-row{
+		margin-bottom: 25px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	.form-note{
+		font-size: 14px;
+		line-height: 20px;
+
+		a{
+			color: $accent;
+			text-decoration: underline;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+
+	.form-caption{
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+		font-weight: 600;
+		color: $text-color;
+		margin-bottom: 25px;
+	}
+
+	.gdpr{
+		padding-top: 20px;
+		text-align: center;
+		font-size: 14px;
+		line-height: 20px;
+
+		a{
+			text-decoration: underline;
+			color: $accent;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}

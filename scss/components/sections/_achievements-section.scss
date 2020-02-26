@@ -1,0 +1,83 @@
+.achievements-section{
+	margin-bottom: 100px;
+
+	.section-inner{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.section-achievements,
+	.section-plans{
+		width: calc(50% - 15px);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.section-caption{
+		margin-bottom: 20px;
+	}
+
+	.section-achievements{
+		padding: 50px 100px 50px 0;
+		position: relative;
+		color: $text-light;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 60vw;
+			height: 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			background: $primary;
+			z-index: -1;
+		}
+	}
+
+	.section-plans{
+		padding: 10px 0 10px 68px;
+	}
+
+	@media screen and (max-width: 991px){
+		.section-achievements{
+			width: 50%;
+			padding-right: 30px;
+		}
+
+		.section-plans{
+			width: 50%;
+			padding-left: 30px;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		margin-bottom: 0;
+
+		.section-inner{
+			flex-direction: column;
+		}
+
+		.section-achievements{
+			width: 100%;
+			padding-right: 0;
+			padding: 70px 0;
+
+			&:before{
+				width: 110vw;
+				right: -5vw;
+			}
+		}
+
+		.section-plans{
+			width: 100%;
+			padding-left: 0;
+			padding: 70px 0;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		text-align: center;
+	}
+}

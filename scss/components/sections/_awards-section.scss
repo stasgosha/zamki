@@ -1,0 +1,105 @@
+.awards-section{
+	position: relative;
+	padding: 85px 0 95px;
+	color: $text-light;
+
+	.section-bg{
+		background: $primary;
+		width: 100%;
+		height: 410px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	@media screen and (max-width: 991px){
+		.section-bg{
+			height: 240px;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		padding-top: 70px;
+		padding-bottom: 75px;
+
+		.section-bg{
+			height: 180px;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		border-bottom: 1px solid #403735;
+		text-align: center;
+
+		.section-bg{
+			height: 100%;
+		}
+	}
+
+	.container{
+		position: relative;
+		z-index: 2;
+	}
+
+	.section-slider{
+	}
+
+	.section-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: calc(100% + 15px * 2);
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-bottom: 20px;
+
+		.sh-block{
+			padding: 0 15px;
+		}
+
+		@media screen and (max-width: 575px){
+			margin-bottom: 40px;
+			flex-direction: column;
+		}
+	}
+
+	.slick-arrow{
+		transform: translateY(0);
+		position: static;
+	}
+
+	.awards-slider-arrows{
+		display: flex;
+
+		.slick-arrow{
+			margin-right: 10px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.awards-slider{
+	.slide-image{
+		display: block;
+		position: relative;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.slide{
+			margin-bottom: 15px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}

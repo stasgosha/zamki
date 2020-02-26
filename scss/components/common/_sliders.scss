@@ -1,0 +1,195 @@
+.slick-slider{
+	width: calc(100% + 15px * 2);
+	margin: -15px;
+
+	.slide{
+		outline: none !important;
+		padding: 15px;
+	}
+
+	@media screen and (max-width: 991px){
+		width: calc(100% + 10px * 2);
+		margin: -15px -10px;
+
+		.slide{
+			padding: 15px 10px;
+		}
+	}
+
+	&:not(.custom-arrows) .slick-arrow{
+		&.slick-prev{
+			left: -75px;
+		}
+
+		&.slick-next{
+			right: -75px;
+		}
+
+		@media screen and (max-width: 1369px){
+			&.slick-prev{
+				left: -50px;
+			}
+
+			&.slick-next{
+				right: -50px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 576px){
+		&.white-arrows{
+			.slick-arrow{
+				background: #fff;
+				border-color: #fff;
+
+				&:hover{
+					background: $primary;
+					border-color: $primary;
+
+					svg{
+						fill: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1340px) and (min-width: 1200px){
+		&:not(.custom-arrows){
+			width: calc(100% - 80px);
+			margin: 0 auto;
+
+			.slick-arrow{
+				&.slick-prev{
+					left: -40px;
+				}
+
+				&.slick-next{
+					right: -40px;
+				}
+			}
+		}
+	}
+
+	// @media
+	// 	screen and (max-width: 1132px) and (min-width: 992px),
+	// 	screen and (max-width: 898px) and (min-width: 768px),
+	// 	screen and (max-width: 706px) and (min-width: 576px){
+	// 		&:not(.custom-arrows){
+	// 			width: calc(100% - 80px);
+	// 			margin: 0 auto;
+
+	// 			.slick-arrow{
+	// 				&.slick-prev{
+	// 					left: -50px;
+	// 				}
+
+	// 				&.slick-next{
+	// 					right: -50px;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+
+	// @media screen and (max-width: 575px){
+	// 	width: calc(100% - 20px);
+	// 	margin: -15px auto;
+
+	// 	&:not(.custom-arrows){
+	// 		.slick-arrow{
+	// 			width: 20px;
+	// 			border: 0 !important;
+
+	// 			&.slick-prev{
+	// 				left: -20px;
+	// 			}
+
+	// 			&.slick-next{
+	// 				right: -20px;
+	// 			}
+	// 		}
+	// 	}
+	// }
+}
+
+.slick-arrow{
+	height: 28px;
+	width: 28px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f4ebde;
+
+	svg{
+		fill: $primary;
+		width: 12px;
+		height: 12px;
+		display: block;
+		transition: all $t;
+	}
+
+	&:before{
+		content: '';
+		display: block;
+	}
+
+	&:hover,
+	&:focus{
+		background: $accent;
+
+		svg{
+			fill: #fff;
+		}
+	}
+
+	&.slick-prev{
+		svg{
+			transform: translateX(-1px);
+		}
+	}
+
+	&.slick-next{
+		svg{
+			transform: translateX(1px);
+		}
+	}
+}
+
+.slick-dotted.slick-slider{
+	margin-bottom: 0;
+}
+
+.slick-dots{
+	li{
+		margin: 0 8px;
+		width: 9px;
+		height: 9px;
+
+		button{
+			transform: rotate(-45deg);
+			border: 2px solid $brown;
+			background: transparent;
+			width: 9px;
+			height: 9px;
+			padding: 0;
+			transition: all $t;
+			opacity: .4;
+
+			&:before{
+				display: none;
+			}
+
+			&:hover{
+				opacity: 1;
+			}
+		}
+
+		&.slick-active{
+			button{
+				opacity: 1;
+				background: $brown;
+			}
+		}
+	}
+}

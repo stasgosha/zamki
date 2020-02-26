@@ -1,0 +1,95 @@
+.tabs-nav{
+	display: flex;
+
+	.tab-btn{
+		margin: 0 15px;
+		min-width: 165px;
+		border: 2px solid $accent;
+		color: $accent;
+		font-weight: bold;
+		text-align: center;
+		font-size: 18px;
+		line-height: 20px;
+		letter-spacing: -0.03em;
+		padding: 8px 25px;
+		min-height: 44px;
+		background: transparent;
+		font-family: $main-font;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		transition: all $t;
+		cursor: pointer;
+
+		&:hover{
+			background: lighten($accent, 10%);
+			color: #fff;
+			border-color: lighten($accent, 10%);
+		}
+
+		&.current{
+			background: $accent;
+			border-color: $accent;
+			color: #fff;
+			cursor: default;
+		}
+
+		&:focus{
+			outline: none;
+		}
+	}
+
+	&.dark{
+		.tab-btn{
+			border: 2px solid $primary;
+			color: $primary;
+
+			&:hover{
+				background: lighten($primary, 10%);
+				border-color: lighten($primary, 10%);
+				color: #fff;
+			}
+
+			&.current{
+				background: $primary;
+				border-color: $primary;
+				color: #fff;
+			}
+		}
+	}
+
+	&.no-margins{
+		.tab-btn{
+			margin: 0;
+		}
+	}
+
+	&.fullwidth{
+		width: 100%;
+
+		.tab-btn{
+			min-width: unset;
+			flex: auto;
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		&.md-no-margins{
+			.tab-btn{
+				margin: 0;
+			}
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.tab-btn{
+			min-width: unset;
+			flex: auto;
+			width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+			font-size: 14px;
+		}
+	}
+}

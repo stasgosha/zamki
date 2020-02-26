@@ -1,0 +1,11 @@
+.well-being-section{
+	padding: 85px 0 30px;
+
+	@media screen and (max-width: 991px){
+		padding: 35px 0;
+	}
+
+	@media screen and (max-width: 767px){
+		text-align: center;
+	}
+}

@@ -1,0 +1,26 @@
+// Fonts
+$main-font: 'Raleway', Arial, sans-serif;
+$second-font: $main-font;
+
+// Colors
+$red: #df0024;
+$brown: #332a29;
+$beige: #f4ebde;
+// $white: #F9FAFA;
+
+$dark: #261d17;
+$gray: #261d17;
+$light: #f4ebde;
+
+$text-color: $brown;
+$text-dark: $dark;
+$text-light: $light;
+
+$primary: $brown;
+$accent: $red;
+
+// Params
+$body-bg: #f4ebde; // site background
+$t: .3s; // animation duration
+$r: 5px; // default border radius
+$shadow: 3px 3px 40px rgba(#000, 0.17); // default card shadow
