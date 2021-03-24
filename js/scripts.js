@@ -122,9 +122,9 @@ document.addEventListener('DOMContentLoaded', function(){
 		let selector = $(this).data('toggle');
 
 		if ($(this).is(':checked')) {
-			$(selector).addClass('visible');
+			$('.tab.visible ' + selector).addClass('visible');
 		} else{
-			$(selector).removeClass('visible');
+			$('.tab.visible ' + selector).removeClass('visible');
 		}
 	})
 
@@ -179,10 +179,12 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	// Tabs
 	$("[data-tab]").click(function(e){
-		// e.preventDefault();
+		e.preventDefault();
+		e.stopPropagation();
 		var dest = $(this).data('tab');
 
-		$(dest).stop().fadeIn(300).siblings().hide(0);
+		$(dest).stop().fadeIn(300).addClass('visible')
+			.siblings().hide(0).removeClass('visible');
 
 		$(this).addClass('current').siblings().removeClass('current');
 	});

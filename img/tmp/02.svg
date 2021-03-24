@@ -1,0 +1,29 @@
+<svg id="_01" data-name="01" xmlns="http://www.w3.org/2000/svg" width="475" height="201" viewBox="0 0 475 201">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #933;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path id="Фигура_119" data-name="Фигура 119" class="cls-1" d="M439,513l-6-28-9-4,21-42,24-6L897,548l-4,4,1,32-32,48Z" transform="translate(-423 -432)"/>
+  <path id="Фигура_120" data-name="Фигура 120" class="cls-2" d="M479,523l-4-28,16-44,20.5-6" transform="translate(-423 -432)"/>
+  <path id="Фигура_121" data-name="Фигура 121" class="cls-2" d="M519,535l-4-29,18-44,22-6" transform="translate(-423 -432)"/>
+  <path id="Фигура_122" data-name="Фигура 122" class="cls-2" d="M560,547l-4-29,18-45,23-5" transform="translate(-423 -432)"/>
+  <path id="Фигура_123" data-name="Фигура 123" class="cls-2" d="M600,557l-3-28,18-46,21-5" transform="translate(-423 -432)"/>
+  <path id="Фигура_124" data-name="Фигура 124" class="cls-2" d="M643,570l-4-29,19-46,21-5" transform="translate(-423 -432)"/>
+  <path id="Фигура_125" data-name="Фигура 125" class="cls-2" d="M685,581l-3-29,18-45,21-5" transform="translate(-423 -432)"/>
+  <path id="Фигура_126" data-name="Фигура 126" class="cls-2" d="M728,593l-3-29,18-45,23-5" transform="translate(-423 -432)"/>
+  <path id="Фигура_127" data-name="Фигура 127" class="cls-2" d="M772,606l-2-29,17-48,17-5" transform="translate(-423 -432)"/>
+  <path id="Фигура_128" data-name="Фигура 128" class="cls-2" d="M815,617l-2-29,18-45,18-8" transform="translate(-423 -432)"/>
+</svg>

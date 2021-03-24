@@ -1,0 +1,27 @@
+<svg id="_01" data-name="01" xmlns="http://www.w3.org/2000/svg" width="324" height="169" viewBox="0 0 324 169">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c66626;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path id="Фигура_50" data-name="Фигура 50" class="cls-1" d="M129,625l-9-28-8-4,20-46,34-7,265,79-7,3,10,31-45,54Z" transform="translate(-111 -539)"/>
+  <path id="Фигура_105" data-name="Фигура 105" class="cls-2" d="M161,635l-11-29,21-48,37-5" transform="translate(-111 -539)"/>
+  <path id="Фигура_105_копия" data-name="Фигура 105 копия" class="cls-2" d="M193,644l-11-29,21-48,37-5" transform="translate(-111 -539)"/>
+  <path id="Фигура_105_копия_2" data-name="Фигура 105 копия 2" class="cls-2" d="M223,654l-11-29,21-48,37-5" transform="translate(-111 -539)"/>
+  <path id="Фигура_105_копия_3" data-name="Фигура 105 копия 3" class="cls-2" d="M257,664l-11-29,21-48,37-5" transform="translate(-111 -539)"/>
+  <path id="Фигура_105_копия_4" data-name="Фигура 105 копия 4" class="cls-2" d="M289,676q-5-16.5-10-33l21-47,42-3" transform="translate(-111 -539)"/>
+  <path id="Фигура_108" data-name="Фигура 108" class="cls-2" d="M320,684l-7-30,19-48,33-6" transform="translate(-111 -539)"/>
+  <path id="Фигура_109" data-name="Фигура 109" class="cls-2" d="M354,695l-7-30,19-48,37-6" transform="translate(-111 -539)"/>
+</svg>
