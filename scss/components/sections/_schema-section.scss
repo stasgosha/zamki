@@ -184,6 +184,23 @@
 				padding: 0 0.7813vw;
 			}
 
+			.hd-number{
+				width: 1.6667vw;
+				height: 1.6667vw;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border: 1px solid #fff;
+
+				@media screen and (min-width: 768px){
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 0.3646vw;
+				}
+			}
+
 			.hd-name{
 				font-weight: 600;
 				margin-bottom: 0.2604vw;
@@ -231,6 +248,12 @@
 
 				p{
 					padding: 0 15px;
+				}
+
+				.hd-number{
+					margin-bottom: 7px;
+					width: 32px;
+					height: 32px;
 				}
 
 				.hd-name{
@@ -299,6 +322,12 @@
 				.hd-info{
 					display: none;
 				}
+			}
+		}
+
+		&.no-events{
+			.description-block{
+				pointer-events: none;
 			}
 		}
 
@@ -388,6 +417,107 @@
 				left: 62.1354vw;
 				bottom: 22.9167vw;
 			}
+
+			// Strelnikovo
+			#house-3-1-description{
+				left: 7.7604vw;
+				bottom: 43.3854vw;
+			}
+
+			#house-3-2-description{
+				left: 9.8438vw;
+				bottom: 46.5625vw;
+			}
+
+			#house-3-3-description{
+				left: 13.2292vw;
+				bottom: 48.6458vw;
+			}
+
+			#house-3-4-description{
+				left: 17.0313vw;
+				bottom: 51.1458vw;
+			}
+
+			#house-3-5-description{
+				left: 22.0833vw;
+				bottom: 45.8854vw;
+			}
+
+			#house-3-6-description{
+				left: 18.2813vw;
+				bottom: 41.8229vw;
+			}
+
+			#house-3-7-description{
+				left: 24.5313vw;
+				bottom: 39.5833vw;
+			}
+
+			#house-3-8-description{
+				left: 28.1771vw;
+				bottom: 37.2396vw;
+			}
+
+			#house-3-9-description{
+				left: 33.3333vw;
+				bottom: 35.5208vw;
+			}
+
+			#house-3-10-description{
+				left: 38.2292vw;
+				bottom: 33.6979vw;
+			}
+
+			#house-3-11-description{
+				left: 43.0208vw;
+				bottom: 31.7188vw;
+			}
+
+			#house-3-12-description{
+				left: 48.1250vw;
+				bottom: 29.2708vw;
+			}
+
+			#house-3-13-description{
+				left: 53.2813vw;
+				bottom: 26.9792vw;
+			}
+
+			#house-3-14-description{
+				left: 58.9063vw;
+				bottom: 24.5313vw;
+			}
+
+			#house-3-15-description{
+				left: 63.9583vw;
+				bottom: 21.8750vw;
+			}
+
+			#house-3-16-description{
+				left: 69.5833vw;
+				bottom: 19.8438vw;
+			}
+
+			#house-3-17-description{
+				left: 74.9479vw;
+				bottom: 17.9167vw;
+			}
+
+			#house-3-18-description{
+				left: 80.7292vw;
+				bottom: 15.6250vw;
+			}
+
+			#house-3-19-description{
+				left: 86.8229vw;
+				bottom: 13.0208vw;
+			}
+
+			#house-3-20-description{
+				left: 92.8646vw;
+				bottom: 8.7500vw;
+			}
 		}
 
 		@media screen and (min-width: 1920px){
@@ -475,6 +605,107 @@
 			#house-23-description{
 				left: 1193px;
 				bottom: 440px;
+			}
+
+			// Strelnikovo
+			#house-3-1-description{
+				left: 149px;
+				bottom: 833px;
+			}
+
+			#house-3-2-description{
+				left: 189px;
+				bottom: 894px;
+			}
+
+			#house-3-3-description{
+				left: 254px;
+				bottom: 934px;
+			}
+
+			#house-3-4-description{
+				left: 327px;
+				bottom: 982px;
+			}
+
+			#house-3-5-description{
+				left: 424px;
+				bottom: 881px;
+			}
+
+			#house-3-6-description{
+				left: 351px;
+				bottom: 803px;
+			}
+
+			#house-3-7-description{
+				left: 471px;
+				bottom: 760px;
+			}
+
+			#house-3-8-description{
+				left: 541px;
+				bottom: 715px;
+			}
+
+			#house-3-9-description{
+				left: 640px;
+				bottom: 682px;
+			}
+
+			#house-3-10-description{
+				left: 734px;
+				bottom: 647px;
+			}
+
+			#house-3-11-description{
+				left: 826px;
+				bottom: 609px;
+			}
+
+			#house-3-12-description{
+				left: 924px;
+				bottom: 562px;
+			}
+
+			#house-3-13-description{
+				left: 1023px;
+				bottom: 518px;
+			}
+
+			#house-3-14-description{
+				left: 1131px;
+				bottom: 471px;
+			}
+
+			#house-3-15-description{
+				left: 1228px;
+				bottom: 420px;
+			}
+
+			#house-3-16-description{
+				left: 1336px;
+				bottom: 381px;
+			}
+
+			#house-3-17-description{
+				left: 1439px;
+				bottom: 344px;
+			}
+
+			#house-3-18-description{
+				left: 1550px;
+				bottom: 300px;
+			}
+
+			#house-3-19-description{
+				left: 1667px;
+				bottom: 250px;
+			}
+
+			#house-3-20-description{
+				left: 1783px;
+				bottom: 168px;
 			}
 		}
 	}
